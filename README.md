@@ -9,7 +9,7 @@ X5 2.5 精修版（内置 44safe-v3 缓存配置，**开箱即用，无需联网
 
 👉 **[下载 ok250x5.apk (Release v2.5)](https://github.com/shengshimeiyan/fty44safe/releases/latest)**
 
-```
+```text
 sha256: 1475b26165475e6cf5e88106bf60349082f9b27090f5a756c709305b3dd310f8
 ```
 
@@ -43,7 +43,7 @@ SIGSEGV（闪退根因，logcat 实测确认）。本配置的做法：
 
 X5 → 设置 → 配置 → 输入订阅地址：
 
-```
+```text
 https://cdn.jsdelivr.net/gh/shengshimeiyan/fty44safe@main/config.json
 ```
 
