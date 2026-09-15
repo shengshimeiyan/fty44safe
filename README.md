@@ -3,6 +3,19 @@
 专为 **Android 4.4 (Dalvik)** 老电视盒子整理适配的 FongMi/TVBox 系点播接口配置。
 实测环境：中国移动 E900-S（Hi3798MV100 / Android 4.4）+ OK影视 X5 离线版 2.5.0。
 
+## 📦 直接下载 APK（推荐）
+
+X5 2.5 精修版（内置 44safe-v3 缓存配置，**开箱即用，无需联网订阅**）：
+
+👉 **[下载 ok250x5.apk (Release v2.5)](https://github.com/shengshimeiyan/fty44safe/releases/latest)**
+
+```
+sha256: 1475b26165475e6cf5e88106bf60349082f9b27090f5a756c709305b3dd310f8
+```
+
+- 单 dex，兼容 Android 4.4（okys289 是多 dex，4.4 装不上）
+- 已缓存本仓库 `config.json`（44safe-v3）→ 装完即用，断网也能看
+
 ## 为什么老盒子需要专用接口
 
 主流接口（如饭太硬）的 spider jar 内含 native `.so`，在 4.4 的 Dalvik 上加载即
@@ -22,14 +35,23 @@ SIGSEGV（闪退根因，logcat 实测确认）。本配置的做法：
 
 ## 使用
 
-1. 盒子安装 OK影视 X5 离线版 **2.5.0**（安卓 4.X 专用，单 dex + MultiDex 注入）
-2. X5 → 设置 → 配置 → 输入订阅地址：
+### 方式 A：用 APK 内置缓存（4.4 老盒子首选）
+
+安装 Release 里的 `ok250x5.apk` → 打开即已配置好，无需任何订阅操作。
+
+### 方式 B：在线订阅（仅新设备/新版本可用）
+
+X5 → 设置 → 配置 → 输入订阅地址：
 
 ```
 https://cdn.jsdelivr.net/gh/shengshimeiyan/fty44safe@main/config.json
 ```
 
-（jsDelivr CDN 国内一般可直连；也可用 GitHub raw 直链或本仓库任意历史版本）
+（jsDelivr CDN 国内一般可直连；也可用 GitHub raw 直链）
+
+> ⚠️ **4.4 盒子注意**：X5 的 OkHttp 仅支持 SSLv3/TLS1.0，jsDelivr / GitHub raw
+> 均为 TLS1.2+，**从盒子内订阅必失败**（`ssl3 alert handshake failure`）。
+> 老盒子请走方式 A（内置缓存）或自建 http:// 明文镜像。
 
 ## ⚠️ 版本警告（4.4 用户必读）
 
