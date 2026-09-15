@@ -1,0 +1,290 @@
+{
+ "spider": "",
+ "sites": [
+  {
+   "key": "hhys",
+   "name": "华华云┃秒播",
+   "type": 1,
+   "api": "http://hhzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "zy360",
+   "name": "360┃资源",
+   "type": 1,
+   "api": "https://360zyzz.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "lzzy",
+   "name": "量子┃资源",
+   "type": 1,
+   "api": "https://cj.lzcaiji.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 25
+  },
+  {
+   "key": "hnzy",
+   "name": "红牛┃资源",
+   "type": 1,
+   "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "bfzy",
+   "name": "暴风┃资源",
+   "type": 1,
+   "api": "https://bfzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "gszy",
+   "name": "光速┃资源",
+   "type": 1,
+   "api": "https://api.guangsuapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "ffzy",
+   "name": "非凡┃资源",
+   "type": 1,
+   "api": "http://cj.ffzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 30
+  },
+  {
+   "key": "mdzy",
+   "name": "魔都┃资源",
+   "type": 1,
+   "api": "https://caiji.moduapi.cc/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "sbzy",
+   "name": "速博┃资源",
+   "type": 1,
+   "api": "https://subocaiji.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "jyzy",
+   "name": "金鹰┃资源",
+   "type": 1,
+   "api": "https://jinyingzy.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 20
+  },
+  {
+   "key": "dytt",
+   "name": "电影天堂┃资源",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "timeout": 25
+  }
+ ],
+ "lives": [
+  {
+   "name": "Kimentanm",
+   "type": 0,
+   "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+   "playerType": 2
+  },
+  {
+   "name": "综合直播",
+   "type": 0,
+   "url": "http://193.123.86.190:14888/TV/iptv.php",
+   "ua": "bingcha/1.1 (mianfeifenxiang)",
+   "playerType": 2
+  },
+  {
+   "name": "虎牙一起看",
+   "type": 0,
+   "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+   "playerType": 2,
+   "timeout": 10,
+   "ua": "okHttp/Mod-1.5.0.0"
+  },
+  {
+   "name": "斗鱼一起看",
+   "type": 0,
+   "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+   "playerType": 2,
+   "timeout": 10,
+   "ua": "okHttp/Mod-1.5.0.0"
+  },
+  {
+   "name": "YY轮播",
+   "type": 0,
+   "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+   "playerType": 2,
+   "timeout": 10,
+   "ua": "okHttp/Mod-1.5.0.0"
+  }
+ ],
+ "rules": [
+  {
+   "name": "非凡广告",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "svipsvip.ffzy",
+    "ffzy-play",
+    "ffzy-online"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "25.0666",
+    "25.08",
+    "20.52",
+    "25.1",
+    "25.1999"
+   ]
+  },
+  {
+   "name": "量子广告",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz",
+    "lzcdn",
+    "yzzy1.play"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+[a-z0-9]{18}\\.ts",
+    "[a-z0-9]{18}\\.ts\\s+",
+    "18.5333",
+    "19.52",
+    "18.6666"
+   ]
+  },
+  {
+   "name": "暴风广告",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf",
+    "bfvvs",
+    "baofeng",
+    "fengbao"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "红牛广告",
+   "hosts": [
+    "bfvvs",
+    "hongniu"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "华华云广告",
+   "hosts": [
+    "hhuus",
+    "hhwenjian"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "360广告",
+   "hosts": [
+    "guoluche",
+    "360zy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "光速广告",
+   "hosts": [
+    "gsuus",
+    "guangsu"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "魔都广告",
+   "hosts": [
+    "moduapi",
+    "mdzy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "速博广告",
+   "hosts": [
+    "subocaiji",
+    "subo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "金鹰广告",
+   "hosts": [
+    "jinyingzy",
+    "jyzy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "电影天堂广告",
+   "hosts": [
+    "dyttzy",
+    "dytt"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n+(?:#EXTINF:[\\d.]+,\\r*\\n+[^\\r\\n]+[\\r\\n]*){1,6}#EXT-X-DISCONTINUITY"
+   ]
+  }
+ ]
+}
