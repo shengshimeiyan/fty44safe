@@ -39,19 +39,27 @@ SIGSEGV（闪退根因，logcat 实测确认）。本配置的做法：
 
 安装 Release 里的 `ok250x5.apk` → 打开即已配置好，无需任何订阅操作。
 
-### 方式 B：在线订阅（仅新设备/新版本可用）
+### 方式 B：在线订阅
 
-X5 → 设置 → 配置 → 输入订阅地址：
+X5 → 设置 → 配置 → 输入订阅地址。
+
+**4.4 老盒子用这个**（Cloudflare 边缘代理，默认允许 TLS1.0，
+已在 E900-S 盒子内端到端实测成功）：
+
+```text
+https://gh.927223.xyz/https://raw.githubusercontent.com/shengshimeiyan/fty44safe/main/config.json
+```
+
+**新设备 / 新版本 X5**（支持 TLS1.2+，jsDelivr 国内一般可直连）：
 
 ```text
 https://cdn.jsdelivr.net/gh/shengshimeiyan/fty44safe@main/config.json
 ```
 
-（jsDelivr CDN 国内一般可直连；也可用 GitHub raw 直链）
-
-> ⚠️ **4.4 盒子注意**：X5 的 OkHttp 仅支持 SSLv3/TLS1.0，jsDelivr / GitHub raw
-> 均为 TLS1.2+，**从盒子内订阅必失败**（`ssl3 alert handshake failure`）。
-> 老盒子请走方式 A（内置缓存）或自建 http:// 明文镜像。
+> ⚠️ 4.4 盒子的 X5 OkHttp 仅支持 SSLv3/TLS1.0：jsDelivr / GitHub raw
+> 直链均为 TLS1.2+，**从盒子内订阅必失败**（`ssl3 alert handshake failure`），
+> 必须走上面的 gh.927223.xyz 代理。免费代理偶发抖动，抓取失败时 X5
+> 会自动沿用缓存配置继续播放，稍后重试即可；断网也能看（方式 A）。
 
 ## ⚠️ 版本警告（4.4 用户必读）
 
