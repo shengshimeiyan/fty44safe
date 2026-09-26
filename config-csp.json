@@ -161,7 +161,7 @@
  ],
  "lives": [
   {
-   "name": "综合直播",
+   "name": "1.综合直播",
    "type": 0,
    "url": "http://192.168.1.4:8899/live.txt",
    "ua": "bingcha/1.1 (mianfeifenxiang)",
