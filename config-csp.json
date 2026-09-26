@@ -119,7 +119,8 @@
    "api": "csp_Jpys",
    "searchable": 1,
    "quickSearch": 1,
-   "filterable": 1
+   "filterable": 1,
+   "ext": "https://y2s52n7.com"
   },
   {
    "key": "douban",
@@ -154,74 +155,6 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_SP360",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "auete",
-   "name": "🦝 Aue影视",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Auete",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "kuaikan",
-   "name": "👀 快看影视",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Kuaikan",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "freeok",
-   "name": "👌 FreeOK",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Freeok",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "nmys",
-   "name": "🌾 农民影视",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Nmys",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "vidhub2",
-   "name": "🎼 Vidhub2",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Vidhub2",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "wogg",
-   "name": "👲 玩偶哥哥",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_Wogg",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "xbpq",
-   "name": "🧩 XBPQ万能",
-   "type": 3,
-   "playerType": 2,
-   "api": "csp_XBPQ",
    "searchable": 1,
    "filterable": 1
   }
@@ -794,26 +727,6 @@
   "cms.qdwght.com"
  ],
  "parses": [
-  {
-   "name": "王",
-   "type": 1,
-   "url": "http://122.228.84.103:7777/api/?key=4Dk5tdayvY6NZufEMG&url="
-  },
-  {
-   "name": "二",
-   "type": 1,
-   "url": "http://110.42.7.182:880/api/?key=7e84f07dc78fbb3406d64a1ab7d966b3&url="
-  },
-  {
-   "name": "小",
-   "type": 1,
-   "url": "http://43.136.176.188:91/api/?key=4ef232e96172b0bda78d393c695fe7c4&url="
-  },
-  {
-   "name": "帅",
-   "type": 1,
-   "url": "http://pan.qiaoji8.com/tvbox/neibu.php?url="
-  },
   {
    "name": "爱豆",
    "type": 0,
